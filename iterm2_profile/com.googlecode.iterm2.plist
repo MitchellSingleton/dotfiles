@@ -8,6 +8,8 @@
 	<string>9F9CA84B-C35F-422B-BA81-1A30398F6007</string>
 	<key>DimBackgroundWindows</key>
 	<true/>
+	<key>FocusFollowsMouse</key>
+	<true/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideTab</key>
@@ -583,7 +585,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -1182,7 +1184,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -1779,7 +1781,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -2378,7 +2380,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -2975,7 +2977,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -3574,7 +3576,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -4171,7 +4173,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -4770,7 +4772,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -5369,7 +5371,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -5966,7 +5968,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -6565,7 +6567,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -7162,7 +7164,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
