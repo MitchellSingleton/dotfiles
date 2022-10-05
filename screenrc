@@ -1,0 +1,48 @@
+term putty-256color
+debug off
+chdir $HOME
+maxwin 11
+verbose on
+autodetach on
+nethack on                      # print wackier status messages
+defobuflimit 4096
+setenv LC_CTYPE en_US.UTF-8
+defutf8 on
+defencoding UTF-8
+
+#idle 360 eval "screen nice -n 19 /opt/s/cmatrix" "idle 360000 pow_detach"
+
+shell -$SHELL                   # use the default shell
+#shelltitle '$ | bash'           # search | name for dynamic window titles
+
+#defmode 600
+#defmonitor off         # turn monitoring on
+#defnonblock 2             # flaky/slow ssh lines
+# Enable scrolling
+termcapinfo xterm* ti@:te@
+defscrollback 10000
+#defscrollback 15000     # 5000 line scrollback
+#deflog off
+#defbce on     # erase background with current bg color
+#defflow off  # will force screen to process ^S/^Q
+#deflogin on             # Log new screen windows in utmp.
+
+#hardcopy_append on
+#hardcopydir ~/.backups/.screen
+#bufferfile ~/.backups/.screen/buffer
+#logfile ~/.backups/.screen/screen_%y-%m-%d_%n
+
+silencewait 4
+
+startup_message off     # no way
+#zombie cr               # Keep dead windows around until I tell them to exit.
+verbose on              # And show the command for the windows when they're resurrected.
+
+#altscreen on            # restore window contents after using (e.g.) vi
+attrcolor b ".I"        # allow bold colors - necessary for some reason
+
+msgwait 6               # 6 second messages
+msgminwait 2
+multiuser off
+
+#pow_detach_msg "Screen session of $LOGNAME $:cr:$:nl:ended." # emulate .logout message

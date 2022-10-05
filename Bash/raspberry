@@ -1,0 +1,15 @@
+GREEN=$(tput setaf 2)
+RED=$(tput setaf 1)
+NORMAL=$(tput sgr0)
+
+echo "$(tput bold)${GREEN}"
+echo "    .~~.   .~~.  "
+echo "   '. \ ' ' / .' ${RED}"
+echo "    .~ .~~~..~.   "
+echo "   : .~.'~'.~. :  "  
+echo "  ~ (   ) (   ) ~ "  
+echo " ( : '~'.~.'~' : )"    
+echo "  ~ .~ (   ) ~. ~ "  
+echo "   (  : '~' :  )  "  
+echo "    '~ .~~~. ~'   "
+echo "        '~'       ${NORMAL}"

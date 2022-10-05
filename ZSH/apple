@@ -1,0 +1,33 @@
+GREEN=$(tput setaf 106)
+YELLOW=$(tput setaf 214)
+ORANGE=$(tput setaf 172)
+RED=$(tput setaf 167)
+PURPLE=$(tput setaf 168)
+BLUE=$(tput setaf 38)
+NORMAL=$(tput sgr0)
+
+printf "                            ${GREEN}.8${NORMAL}\n" 
+printf "                          ${GREEN}.888${NORMAL}\n"
+printf "                        ${GREEN}.8888'${NORMAL}\n"
+printf "                       ${GREEN}.8888'${NORMAL}\n"
+printf "                       ${GREEN}888'${NORMAL}\n"
+printf "                       ${GREEN}8'${NORMAL}\n"
+printf "          ${GREEN}.88888888888.${NORMAL} ${GREEN}.88888888888.${NORMAL}\n"
+printf "       ${GREEN}.8888888888888888888888888888888.${NORMAL}\n"
+printf "     ${GREEN}.8888888888888888888888888888888888.${NORMAL}\n"
+printf "    ${YELLOW}.&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&'${NORMAL}\n"
+printf "    ${YELLOW}&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&'${NORMAL}\n"
+printf "    ${YELLOW}&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&'${NORMAL}\n"
+printf "    ${ORANGE}@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:${NORMAL}\n"
+printf "    ${ORANGE}@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:${NORMAL}\n"
+printf "    ${ORANGE}@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:${NORMAL}\n"
+printf "    ${RED}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.${NORMAL}\n"
+printf "    ${RED}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.${NORMAL}\n"
+printf "    ${RED}\`%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.${NORMAL}\n"
+printf "     ${PURPLE}\`00000000000000000000000000000000000'${NORMAL}\n"
+printf "      ${PURPLE}\`000000000000000000000000000000000'${NORMAL}\n"
+printf "       ${PURPLE}\`0000000000000000000000000000000'${NORMAL}\n"
+printf "         ${BLUE}\`###########################'${NORMAL}\n"
+printf "           ${BLUE}\`#######################'${NORMAL}\n"
+printf "             ${BLUE}\`#########''########'${NORMAL}\n"
+printf "               ${BLUE}\`\"\"\"\"\"\"\'${NORMAL}  ${BLUE}\`\"\"\"\"\"\'${NORMAL}\n"

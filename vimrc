@@ -1,0 +1,9 @@
+set mouse=v
+syntax on
+set tabstop=4
+set expandtab
+set laststatus=2
+set number
+set cursorline
+set background=dark
+colorscheme PaperColor
