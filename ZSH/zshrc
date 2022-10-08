@@ -247,7 +247,25 @@ else
     # MacOS - doesn't have dircolors - least amount of change necessary to enable color for LS and GREP - no aliases needed
     # https://unix.stackexchange.com/questions/91937/mac-os-x-dircolors-not-found
     export CLICOLOR=1
+
+    # fix to allow alias to look at the second word - trailing space is the key
+    alias sudo='sudo '
+
+    alias ls='ls --color=auto'
+    alias ll='ls --color=auto -l'
+    alias la='ls --color=auto -A'
+    alias l='ls --color=auto -CF'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
     export GREP_OPTIONS='--color=auto'
+    # no longer needed with the above GREP_OPTIONS
+    #alias grep='grep --color=auto'
+    #alias fgrep='fgrep --color=auto'
+    #alias egrep='egrep --color=auto'
+    #alias diff='diff --color=auto'
+    #alias ip='ip --color=auto'
+    
     zstyle ':completion:*:default' list-colors ''
     zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
     zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
