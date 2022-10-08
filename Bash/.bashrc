@@ -135,6 +135,9 @@ alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
 
+# fix to allow alias to check second word after sudo - the trailing space is key
+alias sudo='sudo '
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
