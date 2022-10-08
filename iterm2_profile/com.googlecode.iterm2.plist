@@ -7193,6 +7193,8 @@
 			<string>/Users/ms011918</string>
 		</dict>
 	</array>
+	<key>OnlyWhenMoreTabs</key>
+	<false/>
 	<key>OpenBookmark</key>
 	<false/>
 	<key>PMPrintingExpandedStateForPrint2</key>
