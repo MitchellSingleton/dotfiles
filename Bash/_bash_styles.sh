@@ -25,7 +25,8 @@ fi
 
 if [[ -z "$STY" ]]; then
 #    read && screen -xRRq default
-    screen -xRRq default -c ~/.dotfiles/screenrc
+#    screen -xRRq default -c ~/.dotfiles/screenrc
+    screen -d -ARq default -c ~/.dotfiles/screenrc
 fi
 
 # Install the VIM color scheme
