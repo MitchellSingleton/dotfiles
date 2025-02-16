@@ -32,3 +32,10 @@
 #    echo "'$1' is not a valid file"
 #  fi
 #}
+cd() {
+  if [ -n "$1" ]; then
+    builtin cd "$@" && ls --group-directories-first
+  else
+    builtin cd ~ && ls --group-directories-first
+  fi
+}
