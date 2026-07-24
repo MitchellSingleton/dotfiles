@@ -75,7 +75,7 @@ git push
 
 ```bash
 # Remove reference to the .bash_profile
-grep -v "~/dotfiles/Bash/bash_profile" ~/.bash_profile > bashtemp
+grep -v "~/.dotfiles/Bash/bash_profile" ~/.bash_profile > bashtemp
 mv bashtemp ~/.bash_profile
 
 # Delete the dotfiles
