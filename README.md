@@ -11,26 +11,40 @@ Inspired by [Ryan Bates'](https://github.com/ryanb/dotfiles) and [Zach Holman's]
 
 ```bash
 git clone https://github.com/MitchellSingleton/dotfiles ~/.dotfiles
+```
 
+### To Configure bash
+
+```bash
 echo "# Use dotfile
 if [ -f ~/.dotfiles/Bash/bash_profile ]; then
     . ~/.dotfiles/Bash/bash_profile
 fi" >> ~/.bashrc
+```
 
-echo "source ~/.dotfiles/Bash/bash_profile" >> ~/.zshrc
+### To Configure zsh
 
+```bash
+#Create file links
+# zshrc file link
+mv ~/.zshrc ~/old.zshrc.old
+ln -fs ~/.dotfiles/ZSH/zshrc ~/.zshrc
+```
+
+### To Configure mac app iterm
+
+```bash
 #iTerm2 install (macos specific)
 # Specify the preferences directory (macos specific)
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles/iterm2_profile"
 
 # Tell iTerm2 to use the custom preferences in the directory (macos specific)
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+```
 
-#Create file links
-# zshrc file link
-mv ~/.zshrc ~/old.zshrc.old
-ln -fs ~/.dotfiles/ZSH/zshrc ~/.zshrc
+### To Configure all
 
+```bash
 # vim .vimrc install
 ln -fs ~/.dotfiles/vimrc ~/.vimrc
 
