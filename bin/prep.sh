@@ -8,6 +8,9 @@
 # 
 # last update: 2025.06.04.
 
+# $OSTYPE targets
+# Raspberry Pi Trixie = linux-gnu
+
 # colors
 RED="\033[0;31m"
 GREEN="\033[0;32m"
