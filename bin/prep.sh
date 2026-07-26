@@ -38,12 +38,12 @@ function warn {
 }
 
 # check if it is me!
-if [ "$(whoami)" == 'meinside' ]; then
-	REPOSITORY="git@github.com:meinside/dotfiles.git"
-else
-	REPOSITORY="https://github.com/meinside/dotfiles.git"
-fi
-TMP_DIR="$HOME/dotfiles.tmp"
+#if [ "$(whoami)" == 'meinside' ]; then
+#	REPOSITORY="git@github.com:meinside/dotfiles.git"
+#else
+	REPOSITORY="https://github.com/MitchellSingleton/dotfiles.git"
+#fi
+TMP_DIR="$HOME/.dotfiles"
 
 info ">>> this script will setup several things for you..."
 info
@@ -62,10 +62,11 @@ function pull_dotfiles {
 		rm -rf "$TMP_DIR" && \
 			git clone $REPOSITORY "$TMP_DIR"
 
+		# TODO setup links
 		# move temp files to $HOME directory
-		shopt -s dotglob nullglob && \
-			mv "$TMP_DIR"/* "$HOME"/ && \
-			rm -rf "$TMP_DIR"
+		#shopt -s dotglob nullglob && \
+			#mv "$TMP_DIR"/* "$HOME"/ && \
+			#rm -rf "$TMP_DIR"
 	fi
 }
 
@@ -168,6 +169,6 @@ function show_guide_macos {
 }
 
 pull_dotfiles && \
-	install_packages && \
+	#install_packages && \
 	cleanup && \
 	show_guide
