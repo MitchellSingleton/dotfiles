@@ -9,6 +9,15 @@ Inspired by [Ryan Bates'](https://github.com/ryanb/dotfiles) and [Zach Holman's]
 
 ### To Install:
 
+#### With a prep script:
+
+Following commands will clone files from this repository and install several things automatically:
+
+```bash
+$ cd ~
+$ bash <(curl -s https://raw.githubusercontent.com/meinside/dotfiles/master/bin/prep.sh)
+```
+
 ```bash
 git clone https://github.com/MitchellSingleton/dotfiles ~/.dotfiles
 ```
