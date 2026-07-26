@@ -15,9 +15,9 @@ Following commands will clone files from this repository and install several thi
 
 ```bash
 $ cd ~
-$ bash <(curl -s https://raw.githubusercontent.com/meinside/dotfiles/master/bin/prep.sh)
+$ bash <(curl -s https://raw.githubusercontent.com/MitchellSingleton/dotfiles/main/bin/prep.sh)
 ```
-
+#### Using Git clone
 ```bash
 git clone https://github.com/MitchellSingleton/dotfiles ~/.dotfiles
 ```
