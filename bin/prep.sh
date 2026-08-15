@@ -146,21 +146,21 @@ function install_packages_linux {
 	if [ -z "$TERMUX_VERSION" ]; then
 		if [ -x /usr/bin/apt-get ]; then
 			sudo apt-get update && \
-				sudo apt-get -y upgrade && \
-				sudo apt-get -y install zsh tmux psmisc locales && \
+				sudo apt-get upgrade && \
+				sudo apt-get install vim screen unattended-upgrades && \
 				sudo locale-gen en_US.UTF-8
 		else
 			error "* distro not supported"
 		fi
 	else  # termux
 		pkg update && \
-			pkg install zsh psmisc proot-distro
+			#pkg install zsh psmisc proot-distro
 	fi
 }
 
 function install_packages_macos {
 	# install Homebrew
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 }
 
 function cleanup {
@@ -205,6 +205,6 @@ function show_guide_macos {
 }
 
 pull_dotfiles && \
-	#install_packages && \
+	install_packages && \
 	cleanup && \
 	show_guide
