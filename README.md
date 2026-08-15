@@ -55,12 +55,20 @@ defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 ```bash
 # vim .vimrc install
+mv ~/.vimrc ~/old.vimrc.old
 ln -fs ~/.dotfiles/vimrc ~/.vimrc
+
+# root / sudo
+sudo mv /root/.vimrc /root/old.vimrc.old
+sudo ln -fs ~/.dotfiles/vimrc /root/.vimrc
 
 # vim PaperColor theme install
 mkdir -p ~/.vim/colors
 ln -fs ~/.dotfiles/PaperColor.vim ~/.vim/colors/PaperColor.vim
 
+# vim PaperColor theme install
+sudo mkdir -p /root/.vim/colors
+sudo ln -fs ~/.dotfiles/PaperColor.vim /root/.vim/colors/PaperColor.vim
 ```
 
 ### To Update from git (overwriting any local changes):
